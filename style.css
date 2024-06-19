@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Permanent ;
+    src: url(fonts/PermanentMarker-Regular.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -22,29 +28,41 @@ main{
     margin-top: 60px;
 }
 
-.darkmode{
+.darkmodecustom{
     margin-top: 60px;
 }
 
+.dark-mode header {
+    background-color: #2A623D;
+}
+
+.dark-mode #banniere{
+    background-color:  #222f5b;
+} 
+
+.dark-mode #cartes {
+    background-color: #2A623D;
+}
+
 .darkmode-btn{
-    border: none;
-    color: #7f0909;
+    border: solid 3px;
+    color: #fff;
     font-size: 15px;
     padding: 20px 30px;
     border-radius: 3px;
     cursor: pointer;
-    background: #fff;
+    background: none;
     border-radius: 30px;
 }
 
 .login-btn{
-    border: none;
-    color: #7f0909;
+    border: solid 3px;
+    color: #fff;
     font-size: 15px;
     padding: 20px 30px;
     border-radius: 3px;
     cursor: pointer;
-    background: #fff;
+    background: none;
     border-radius: 30px;
 }
 
@@ -72,3 +90,34 @@ ul.menu li a:hover{
     
 }
 
+#banniere{
+    background-color: #ffdb00;
+}
+
+.bannierehp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.droite{
+    display: flex;
+}
+
+.gauche{
+    display: flex;
+}
+
+.gauche img{
+    height: 100px;
+}
+
+.droite img{
+    height: 100px;
+}
+
+h1{
+    font-family: Permanent;
+    margin-top: 10px;
+    font-size: 50px;
+    color: #7f0909;
+}
