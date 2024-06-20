@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.html">
-    <title>Document</title>
+    <link rel="stylesheet" href="collection.html">
+    <title>Harry Potter</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="btn">
-                <button class="login-btn">Connexion</button>
+            <div id="content">
+                <button id="logout-button">Se déconnecter</button>
             </div>
             <div class="darkmodecustom">
                 <div class="dark-mode">
                     <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
                 </div>
             </div>
-           
+
             <div class="logo">
                 <img src="image/logo.png" alt="Logo du site">
             </div>
             <ul class="menu">
-                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="logout.html">Acceuil</a></li>
                 <li><a href="collection.html">Collection</a></li>
                 <li><a href="profil.html">Profil</a></li>
             </ul>
@@ -33,13 +35,13 @@
         <section id="banniere">
             <div class="bannierehp">
                 <div class="gauche">
-                  <img src="image/gryffindor-removebg-preview.png" alt="Logo Gryffondor">
-                  <img src="image/poufsoufle-removebg-preview.png" alt="Logo Poufsouffle">
+                    <img src="image/gryffindor-removebg-preview.png" alt="Logo Gryffondor">
+                    <img src="image/poufsoufle-removebg-preview.png" alt="Logo Poufsouffle">
                 </div>
                 <h1>Les nouvelles cartes Harry Potter</h1>
                 <div class="droite">
-                  <img src="image/serpentard-removebg-preview.png" alt="Logo Serpentard">
-                  <img src="image/serdaigle-removebg-preview.png" alt="Logo Serdaigle">
+                    <img src="image/serpentard-removebg-preview.png" alt="Logo Serpentard">
+                    <img src="image/serdaigle-removebg-preview.png" alt="Logo Serdaigle">
                 </div>
             </div>
         </section>
@@ -48,6 +50,8 @@
         </section>
     </main>
     <script src="darkmode.js"></script>
+    <script src="auth.js"></script>
+
 </body>
 
 </html>
