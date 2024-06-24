@@ -1,6 +1,8 @@
 @font-face {
     font-family: Permanent ;
     src: url(fonts/PermanentMarker-Regular.ttf);
+    font-family: Bebas;
+    src: url(fonts/BebasNeue-Regular.ttf);
 }
 
 
@@ -96,7 +98,7 @@ main{
 }
 
 .darkmodecustom{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .dark-mode header {
@@ -107,8 +109,16 @@ main{
     background-color:  #222f5b;
 } 
 
-.dark-mode #cartes {
+.dark-mode #carte-hp {
     background-color: #2A623D;
+}
+
+.dark-mode #booster{
+    background-color: #222f5b;
+}
+
+.dark-mode #characters{
+    background-color: #222f5b;
 }
 
 .darkmode-btn{
@@ -131,7 +141,7 @@ main{
     cursor: pointer;
     background: none;
     border-radius: 30px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 #content button:hover{
@@ -143,22 +153,23 @@ main{
 }
 
 .logo img{
-    height: 170px;
-    margin-left: 100px;
+    height: 130px;
+    margin-left: 130px;
+    margin-right: 130px;
 }
 
 ul.menu{
     display: flex;
     list-style: none;
     gap: 35px;
-    margin-top: 60px;
-    margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 ul.menu li a {
     color: white;
     text-decoration: none;
-    font-size: 40px; 
+    font-size: 30px; 
 }
 
 ul.menu li a:hover{
@@ -187,10 +198,12 @@ ul.menu li a:hover{
 
 .gauche img{
     height: 100px;
+    padding: 5px;
 }
 
 .droite img{
     height: 100px;
+    padding: 5px;
 }
 
 h1{
@@ -202,21 +215,74 @@ h1{
 
 #carte-hp{
     display: flex;
+    justify-content: space-between
 }
 
-#cartes{
-    background-color:#7f0909;
-}
 
 #cartes h2{
-    font-size: 40px;
+    color: #fff;
     margin-left: 50px;
-    margin-top: 20px;
+    font-size: 40px;
+    font-family: Bebas;
+}
+
+#booster h2{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 40px;
+    font-family: Bebas;
+}
+
+#cartes input{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 25%;
+    border-radius: 4px;
+}
+
+.dark-mode h1{
+    color: #fff;
+}
+
+#booster{
+    margin-top: 100px;
+    background-color: #ffdb00;
+    border-radius: 20px;
+    margin-left: 50px;
+    padding: 50px;
+    margin-right: 50px;
+}
+
+#booster input{
+    display: flex;
+    flex-direction: column;
+    background-color:#7f0909; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+#booster input:hover{
+    transform: scale(1.1);
+    background-color: #420404;
+    transition-duration: 1s;
 }
 
 #booster img{
     height: 250px;
+    margin-left: 50px;
 }
+
+
+
 
 /*style carte*/
 
@@ -224,14 +290,14 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 100px;
-    background-color: #fff;
+    margin-top: 50px;
+    background-color:#ffdb00;
     border-radius: 20px;
     margin-left: 50px;
     padding: 50px;
 }
 .character-carte {
-    border: 2px solid black;
+    border: 5px solid black;
     background-color: #F4A460;
     padding: 12px;
     border-radius: 10px;
@@ -261,5 +327,12 @@ h1{
     display: flex;
     gap: 10px;
     margin-top: 20px;
+    display: flex;
     flex-wrap: wrap;
+}
+
+.character-carte:hover{
+   transform: scale(1.1);
+   transition-duration: 1s;
+   background-color: #f08a30;
 }

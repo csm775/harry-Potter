@@ -14,7 +14,7 @@ function login(email, password) {
     const user = getUser();
     if (user && user.email === email && user.password === password) {
         localStorage.setItem('loggedIn', 'true');
-        window.location.href = 'acceuil.html';
+        window.location.href = 'accueil.html';
     } else {
         alert('Email ou mot de passe incorrect');
     }
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     if (isLoggedIn()) {
-        window.location.href = 'acceuil.html';
+        window.location.href = 'accueil.html';
     }
 });
 

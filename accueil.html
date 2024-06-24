@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="collection.html">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
     <title>Harry Potter</title>
 </head>
 
 <body>
     <header>
         <nav>
+            <ul class="menu">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo du site">
+            </div>
             <div id="content">
                 <button id="logout-button">Se déconnecter</button>
             </div>
@@ -20,15 +29,6 @@
                     <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
                 </div>
             </div>
-
-            <div class="logo">
-                <img src="image/logo.png" alt="Logo du site">
-            </div>
-            <ul class="menu">
-                <li><a href="acceuil.html">Acceuil</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="profil.html">Profil</a></li>
-            </ul>
         </nav>
     </header>
     <main>
@@ -47,19 +47,29 @@
         </section>
         <section id="carte-hp">
             <div id="cartes">   
-                <h2>Les cartes</h2>
-                 <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div id="characters"></div>
+                <h2>Les cartes du moment !</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div id="characters"></div>
+                      </div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                   </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
             </div>
             <div id="booster">
                 <h2>Les nouveaux boosters</h2>
                 <img src="image/booster.jpg" alt="Booster Harry Potter">
+                <input type="button" value="Deballer">
             </div>
         </section>
      
@@ -67,7 +77,7 @@
     <script src="darkmode.js"></script>
     <script src="auth.js"></script>
     <script src="slide.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
     <script src="api.js"></script>
 
 </body>

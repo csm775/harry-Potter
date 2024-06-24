@@ -11,25 +11,26 @@
 
 <body>
     <header>
-        <nav>
-            <div id="content">
-                <button id="logout-button">Se déconnecter</button>
-            </div>
-            <div class="darkmodecustom">
-                <div class="dark-mode">
-                    <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="image/logo.png" alt="Logo du site">
                 </div>
-            </div>
-
-            <div class="logo">
-                <img src="image/logo.png" alt="Logo du site">
-            </div>
-            <ul class="menu">
-                <li><a href="acceuil.html">Acceuil</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="profil.html">Profil</a></li>
-            </ul>
-        </nav>
+                <div id="content">
+                    <button id="logout-button">Se déconnecter</button>
+                </div>
+                <div class="darkmodecustom">
+                    <div class="dark-mode">
+                        <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </header>
     <main>
         <section id="banniere">
@@ -46,6 +47,7 @@
             </div>
         </section>
         <section id="cartes">
+            <input type="text" name="filtr-search" value="" placeholder="Rechercher" data-search="">
             <div id="characters-collection"></div>
         </section>
     </main>
