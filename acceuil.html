@@ -25,7 +25,7 @@
                 <img src="image/logo.png" alt="Logo du site">
             </div>
             <ul class="menu">
-                <li><a href="logout.html">Acceuil</a></li>
+                <li><a href="acceuil.html">Acceuil</a></li>
                 <li><a href="collection.html">Collection</a></li>
                 <li><a href="profil.html">Profil</a></li>
             </ul>
@@ -45,12 +45,30 @@
                 </div>
             </div>
         </section>
-        <section id="cartes">
-            <h2>BLALALALA</h2>
+        <section id="carte-hp">
+            <div id="cartes">   
+                <h2>Les cartes</h2>
+                 <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div id="characters"></div>
+                  </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div id="booster">
+                <h2>Les nouveaux boosters</h2>
+                <img src="image/booster.jpg" alt="Booster Harry Potter">
+            </div>
         </section>
+     
     </main>
     <script src="darkmode.js"></script>
     <script src="auth.js"></script>
+    <script src="slide.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="api.js"></script>
 
 </body>
 
