@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="collection.html">
+    <script type="text/javascript" src="filterizr.min.js"></script>
+    <script type="text/javascript" src="jquery.filterizr.min.js"></script>
     <title>Harry Potter</title>
 </head>
 
@@ -13,21 +15,26 @@
     <header>
         <header>
             <nav>
-                <ul class="menu">
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="collection.html">Collection</a></li>
-                    <li><a href="profil.html">Profil</a></li>
-                </ul>
+                <div class="nav-links">
+                    <ul class="menu">
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                    </ul>
+                </div>
                 <div class="logo">
                     <img src="image/logo.png" alt="Logo du site">
-                </div>
-                <div id="content">
-                    <button id="logout-button">Se déconnecter</button>
                 </div>
                 <div class="darkmodecustom">
                     <div class="dark-mode">
                         <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
                     </div>
+                </div>
+                <div id="content">
+                    <button id="logout-button">Se déconnecter</button>
+                </div>
+                <div class="hamburger">
+                    <img src="image/menu-btn.webp" alt="">
                 </div>
             </nav>
         </header>
@@ -47,14 +54,23 @@
             </div>
         </section>
         <section id="cartes">
-            <input type="text" name="filtr-search" value="" placeholder="Rechercher" data-search="">
-            <div id="characters-collection"></div>
+            <input type="text" name="filtr-search" value="" placeholder="Recherche" data-search="">
+            <ul>
+                <li data-filter="all">All Houses</li>
+                <li data-filter="1">Gryffindor</li>
+                <li data-filter="2">Hufflepuff</li>
+                <li data-filter="3">Ravenclaw</li>
+                <li data-filter="4">Slytherin</li>
+            </ul>
+            <div class="filter-container">
+                <div id="characters-collection"></div>
+            </div>
         </section>
     </main>
     <script src="darkmode.js"></script>
     <script src="apicollection.js"></script>
     <script src="auth.js"></script>
-
+    <script src="sidebar.js"></script>
 </body>
 
 </html>

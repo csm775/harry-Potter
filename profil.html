@@ -9,26 +9,31 @@
     <title>Harry Potter</title>
 </head>
 
-<body>
+<body id="profil-utilisateur">
     <header>
-            <nav>
+        <nav>
+            <div class="nav-links">
                 <ul class="menu">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="collection.html">Collection</a></li>
                     <li><a href="profil.html">Profil</a></li>
                 </ul>
-                <div class="logo">
-                    <img src="image/logo.png" alt="Logo du site">
+            </div>
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo du site">
+            </div>
+            <div class="darkmodecustom">
+                <div class="dark-mode">
+                    <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
                 </div>
-                <div id="content">
-                    <button id="logout-button">Se déconnecter</button>
-                </div>
-                <div class="darkmodecustom">
-                    <div class="dark-mode">
-                        <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
-                    </div>
-                </div>
-            </nav>
+            </div>
+            <div id="content">
+                <button id="logout-button">Se déconnecter</button>
+            </div>
+            <div class="hamburger">
+                <img src="image/menu-btn.webp" alt="">
+            </div>
+        </nav>
     </header>
     <main>
         <section id="banniere">
@@ -44,10 +49,18 @@
                 </div>
             </div>
         </section>
+        <section id="profil-cartes">
+            <h2>Vos cartes</h2>
+            <div class="filter-container">
+                <div id="characters-collection"></div>
+            </div>
+        </section>
         
     </main>
     <script src="darkmode.js"></script>
     <script src="auth.js"></script>
+    <script src="profil.js"></script>
+    <script src="sidebar.js"></script>
 
 </body>
 

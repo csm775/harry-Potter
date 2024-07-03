@@ -17,3 +17,4 @@ async function displayCharacters(characters){
 displayCharacters("albus-dumbledore")
 displayCharacters("harry-potter")
 displayCharacters("cho-chang")
+displayCharacters("draco-malfoy")

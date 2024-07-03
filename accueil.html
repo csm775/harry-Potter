@@ -13,21 +13,26 @@
 <body>
     <header>
         <nav>
-            <ul class="menu">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="profil.html">Profil</a></li>
-            </ul>
+            <div class="nav-links">
+                <ul class="menu">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </div>
             <div class="logo">
                 <img src="image/logo.png" alt="Logo du site">
-            </div>
-            <div id="content">
-                <button id="logout-button">Se déconnecter</button>
             </div>
             <div class="darkmodecustom">
                 <div class="dark-mode">
                     <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
                 </div>
+            </div>
+            <div id="content">
+                <button id="logout-button">Se déconnecter</button>
+            </div>
+            <div class="hamburger">
+                <img src="image/menu-btn.webp" alt="">
             </div>
         </nav>
     </header>
@@ -69,9 +74,16 @@
             <div id="booster">
                 <h2>Les nouveaux boosters</h2>
                 <img src="image/booster.jpg" alt="Booster Harry Potter">
-                <input type="button" value="Deballer">
+                <input type="button" value="Deballer" id="deballer">
             </div>
         </section>
+        <footer>
+            <ul>
+                <li><a href="">Contactez nous</a></li>
+                <li><a href="">Nos réseaux</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </footer>
      
     </main>
     <script src="darkmode.js"></script>
@@ -79,6 +91,8 @@
     <script src="slide.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
     <script src="api.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="booster.js"></script>
 
 </body>
 

@@ -42,6 +42,8 @@ displayCharacters("quirinus-quirrel")
 displayCharacters("rubeus-hagrid")
 displayCharacters("viktor-krum")
 displayCharacters("fleur-delacour")
+displayCharacters("george-weasley")
+displayCharacters("peter-pettigrew")
 
 
 
