@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="collection.html">
-    <script type="text/javascript" src="filterizr.min.js"></script>
-    <script type="text/javascript" src="jquery.filterizr.min.js"></script>
     <title>Harry Potter</title>
 </head>
 
 <body>
     <header>
-        <header>
             <nav>
                 <div class="nav-links">
                     <ul class="menu">
@@ -37,7 +34,6 @@
                     <img src="image/menu-btn.webp" alt="">
                 </div>
             </nav>
-        </header>
     </header>
     <main>
         <section id="banniere">
@@ -54,15 +50,15 @@
             </div>
         </section>
         <section id="cartes">
-            <input type="text" name="filtr-search" value="" placeholder="Recherche" data-search="">
-            <ul>
-                <li data-filter="all">All Houses</li>
-                <li data-filter="1">Gryffindor</li>
-                <li data-filter="2">Hufflepuff</li>
-                <li data-filter="3">Ravenclaw</li>
-                <li data-filter="4">Slytherin</li>
+            <input type="text" id="barre-recherche" value="" placeholder="Recherche" data-search="">
+            <ul id="filtres">
+                <li data-filter="all" class="active">All Houses</li>
+                <li data-filter="Gryffindor">Gryffindor</li>
+                <li data-filter="Hufflepuff">Hufflepuff</li>
+                <li data-filter="Ravenclaw">Ravenclaw</li>
+                <li data-filter="Slytherin">Slytherin</li>
             </ul>
-            <div class="filter-container">
+            <div class="filtres-container">
                 <div id="characters-collection"></div>
             </div>
         </section>
@@ -71,6 +67,7 @@
     <script src="apicollection.js"></script>
     <script src="auth.js"></script>
     <script src="sidebar.js"></script>
+    <script src="recherche.js"></script>
 </body>
 
 </html>

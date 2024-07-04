@@ -11,6 +11,7 @@
 
 <body id="profil-utilisateur">
     <header>
+          <!-- Barre de navigation -->
         <nav>
             <div class="nav-links">
                 <ul class="menu">
@@ -22,14 +23,17 @@
             <div class="logo">
                 <img src="image/logo.png" alt="Logo du site">
             </div>
+               <!-- Bouton darkmode -->
             <div class="darkmodecustom">
                 <div class="dark-mode">
                     <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
                 </div>
             </div>
+                <!-- Bouton de déconnexion du iste -->
             <div id="content">
                 <button id="logout-button">Se déconnecter</button>
             </div>
+             <!-- Sidebar du mode mobile -->
             <div class="hamburger">
                 <img src="image/menu-btn.webp" alt="">
             </div>
@@ -37,6 +41,7 @@
     </header>
     <main>
         <section id="banniere">
+            <!-- bannière du site -->
             <div class="bannierehp">
                 <div class="gauche">
                     <img src="image/gryffindor-removebg-preview.png" alt="Logo Gryffondor">
@@ -51,12 +56,14 @@
         </section>
         <section id="profil-cartes">
             <h2>Vos cartes</h2>
+            <!--récupération des cartes depuis l'api -->
             <div class="filter-container">
                 <div id="characters-collection"></div>
             </div>
         </section>
-        
+
     </main>
+        <!-- liaison des scripts javascript à la page html -->
     <script src="darkmode.js"></script>
     <script src="auth.js"></script>
     <script src="profil.js"></script>

@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Récupérez les personnages sélectionnés depuis le localStorage
-    const selectedCharacters = JSON.parse(localStorage.getItem('selectedCharacters'));
+    let selectedCharacters = JSON.parse(localStorage.getItem('selectedCharacters')); // récupération des cartes depuis la fonction js
     if (selectedCharacters) {
         displayCharacters(selectedCharacters);
     }
 });
 
 function displayCharacters(characters) {
-    const container = document.getElementById("characters-collection");
-    container.innerHTML = '';  // Clear previous characters
+    let container = document.getElementById("characters-collection");
+    container.innerHTML = ''; 
     characters.forEach(character => {
+        // récupération des éléments de cartes a afficher
         container.innerHTML += `
             <div class="character-carte">
                 <h3>${character.name}</h3>

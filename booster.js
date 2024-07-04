@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const deballerButton = document.getElementById('deballer');
-
+    let deballerButton = document.getElementById('deballer');
+    // déclanchement de la fonction au clique du bouton 
     deballerButton.addEventListener('click', async () => {
-        const characters = await fetchCharacters();
-        const randomCharacters = getRandomCharacters(characters, 5);
-        // Stockez les personnages sélectionnés dans le localStorage
+        let characters = await fetchCharacters();
+        let randomCharacters = getRandomCharacters(characters, 5); // récupération de 5 cartes
         localStorage.setItem('selectedCharacters', JSON.stringify(randomCharacters));
-        // Redirigez vers la page profil.html
         window.location.href = 'profil.html';
     });
 });
 
+// srécupération des cartes depuis l'api
 async function fetchCharacters() {
-    const response = await fetch('https://hp-api.lainocs.fr/characters');
-    const data = await response.json();
+    let response = await fetch('https://hp-api.lainocs.fr/characters');
+    let data = await response.json();
     return data;
 }
 
+// récupération des cartes de façon aléatoire
 function getRandomCharacters(characters, number) {
-    const shuffled = characters.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, number);
+    let melanger = characters.sort(() => 0.5 - Math.random());
+    return melanger.slice(0, number);
 }
